@@ -16,3 +16,4 @@ DerivedData/
 
 # API Keys
 *.plist
+Pods/
