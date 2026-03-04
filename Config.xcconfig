@@ -5,5 +5,4 @@
 //  Created by Горніч Антон on 04.03.2026.
 //
 
-// Configuration settings file format documentation can be found at:
-// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+API_KEY = c82bab9a31f24512bd0dbaae94e5cf70
