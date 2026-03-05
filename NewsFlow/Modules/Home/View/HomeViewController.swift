@@ -8,6 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //MARK: - properties
+    var presenter = HomeViewToPresenterProtocol?
+    private var articles: [Article] = []
+    private var currentCategory = "genral"
 
     override func viewDidLoad() {
         super.viewDidLoad()

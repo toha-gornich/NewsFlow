@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Article: Codable, Sendable{
+struct Article: Codable, Sendable {
     let title: String
     let description: String?
     let urlToImage: String?
@@ -15,4 +15,23 @@ struct Article: Codable, Sendable{
     let publishedAt: String
     let source: Source
     
+
+    enum CodingKeys: String, CodingKey {
+        case title
+        case description
+        case urlToImage
+        case url
+        case publishedAt
+        case source
+    }
+
+    nonisolated init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        title = try container.decode(String.self, forKey: .title)
+        description = try container.decodeIfPresent(String.self, forKey: .description)
+        urlToImage = try container.decodeIfPresent(String.self, forKey: .urlToImage)
+        url = try container.decode(String.self, forKey: .url)
+        publishedAt = try container.decode(String.self, forKey: .publishedAt)
+        source = try container.decode(Source.self, forKey: .source)
+    }
 }
