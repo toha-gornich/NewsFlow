@@ -19,6 +19,7 @@ protocol HomeViewToPresenterProtocol: AnyObject {
 }
 
 //Presenter -> View
+@MainActor
 protocol HomePresenterToViewProtocol: AnyObject {
     func showArticles(_ article: [Article])
     func showError(_ message: String)

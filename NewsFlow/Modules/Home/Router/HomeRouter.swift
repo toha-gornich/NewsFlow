@@ -24,7 +24,7 @@ final class HomeRouter: HomePresenterToRouterProtocol{
     }
     func navigateToDetail(article: Article, from view: HomePresenterToViewProtocol) {
         guard let viewController = view as? UIViewController else {return}
-//        let detailVC = DetailRouter.createModule(article: article)
-//        viewController.navigateController?.pushViewController(detailVC, animated: true)
+        let detailVC = DetailRouter.createModule(article: article)
+        viewController.navigationController?.pushViewController(detailVC, animated: true)
     }
 }

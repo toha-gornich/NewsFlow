@@ -487,6 +487,7 @@
 		};
 		625E8ADF2F588DAF00CAFCC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 625E8B152F58924300CAFCC8 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -552,6 +553,7 @@
 		};
 		625E8AE02F588DAF00CAFCC8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 625E8B152F58924300CAFCC8 /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
