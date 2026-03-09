@@ -15,7 +15,15 @@ struct Article: Codable, Sendable {
     let publishedAt: String
     let source: Source
     
-
+    init(title: String, description: String?, urlToImage: String?, url: String, publishedAt: String, source: Source) {
+            self.title = title
+            self.description = description
+            self.urlToImage = urlToImage
+            self.url = url
+            self.publishedAt = publishedAt
+            self.source = source
+        }
+    
     enum CodingKeys: String, CodingKey {
         case title
         case description
